@@ -16,7 +16,7 @@ pub struct SerializedAudio {
 pub struct SerializedMusicFile {
 
     pub file: String,
-    pub data: Music,
+    pub music: Music,
 
 }
 

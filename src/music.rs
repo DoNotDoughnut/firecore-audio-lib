@@ -8,11 +8,12 @@ pub struct Music {
 
     pub track: MusicId,
     pub name: MusicName,
+    #[serde(default)]
     pub data: MusicData,
 
 }
 
-#[derive(Debug, Copy, Clone, Serialize, Deserialize)]
+#[derive(Default, Debug, Copy, Clone, Serialize, Deserialize)]
 pub struct MusicData {
 
     pub loop_start: Option<f64>,
